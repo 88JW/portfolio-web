@@ -16,6 +16,7 @@
 
 /* NAVBAR CSS */
 nav.navbar {
+  /* position: fixed; */
   padding: 18px 0;
   width: 100%;
   top: 0;

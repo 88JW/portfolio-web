@@ -1,9 +1,9 @@
 .meFoto {
   width: 80%;
-  border: 2px solid white;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* border: 2px solid white; */
+  padding: 0px;
+  /* border-radius: 50%; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .banner {
@@ -27,7 +27,7 @@ p {
   line-height: 1.5;
 }
 
-.banner-text{
+.banner-text {
   display: flex;
   flex-direction: column;
   justify-content: center;

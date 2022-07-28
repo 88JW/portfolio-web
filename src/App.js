@@ -4,6 +4,8 @@ import NavBar from "./components/navbar";
 import Banner from "./components/banner";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
+import ContactUs from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

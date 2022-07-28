@@ -1,0 +1,27 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer h2 {
+  font-size: 32px;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+.footer h4 {
+  font-size: 32px;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+
+.footer-box {
+}
+
+.footer-socialmedia {
+}
+
+.smPng:hover {
+  background-color: rgba(91, 167, 209, 1);
+  border-radius: 100%;
+}

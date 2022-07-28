@@ -1,6 +1,7 @@
 .skills {
-  background-color: rgba(0, 0, 0, 0.35);
+  /* background-color: rgba(0, 0, 0, 0.35); */
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .skills-box {
@@ -9,7 +10,7 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .skills-box h2 {

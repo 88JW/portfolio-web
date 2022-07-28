@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 import me from "../assets/1.png";
+import me2 from "../assets/Coding.png";
 import "./banner.css";
 
 export const Banner = () => {
@@ -72,7 +73,7 @@ export const Banner = () => {
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={me} className="meFoto"></img>
+            <img src={me2} className="meFoto"></img>
           </Col>
         </Row>
       </Container>
