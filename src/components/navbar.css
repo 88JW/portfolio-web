@@ -1,0 +1,98 @@
+.logoPng {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.smPng {
+  width: 50px;
+  height: 50px;
+}
+
+/* NAVBAR CSS */
+nav.navbar {
+  padding: 18px 0;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32 ease-in-out;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+nav.navbar a.navbar-brand {
+  width: 10%;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #282c34;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: white !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 25px;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  opacity: 1;
+  background-color: #5ba7d1;
+  border-radius: 5px;
+}
+
+span.navbar-text {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: white;
+  border: 1px solid white;
+  padding: 18px 34px;
+  font-size: 20px;
+  margin-left: 20px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar-text button span {
+  z-index: 1;
+}
+
+.navbar-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-text button:hover {
+  color: #5ba7d1;
+}
+
+.navbar-text button:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}

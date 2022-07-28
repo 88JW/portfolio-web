@@ -1,0 +1,40 @@
+.skills {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding-bottom: 100px;
+}
+
+.skills-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.skills-box h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.skills-carousel {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.item-carousel img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.item-carousel h3 {
+  letter-spacing: 0.8px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}

@@ -1,0 +1,58 @@
+.project {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.project {
+  padding: 80px 0;
+  position: relative;
+}
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.project p {
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 70%;
+}
+.project .nav.nav-pills {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 50%;
+}
+.project .nav.nav-pills .nav-link {
+  color: white !important;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+  opacity: 1;
+  background-color: #5ba7d1;
+  border-radius: 5px;
+}
+
+/* .background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+} */
