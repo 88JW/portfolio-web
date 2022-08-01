@@ -5,6 +5,8 @@ import lin from "../assets/lin.png";
 import ins from "../assets/ins.png";
 import fb from "../assets/fb.png";
 import "./footer.css";
+// import { HashLink } from "react-router-hash-link";
+// import { BrowserRouter as Router } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -12,8 +14,10 @@ export const Footer = () => {
       <Container>
         <Row className="footer-box">
           <Col md={6} className="footer-text">
-            <h2>Dziękuję za odwiedziny!</h2>
-            <h4>Wojciech Jaskuła </h4>
+            <p>
+              Poszukuję miejsca w firmie, która będzie chciała dać szansę osobie
+              zmieniającej branżę.
+            </p>
           </Col>
           <Col md={6} className="footer-socialmedia">
             {" "}

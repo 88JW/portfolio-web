@@ -2,3 +2,61 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.contact-box img {
+  width: 50%;
+  height: 50%;
+  padding-top: 20px;
+}
+
+.contact-box input {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-box textarea {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.contact-box input[type="submit"] {
+  font-weight: 700;
+  border: 1px solid white;
+  padding: 18px 34px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.contact-box input[type="submit"]::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-box input[type="submit"]:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.contact-box h2 {
+  font-size: 45px;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}

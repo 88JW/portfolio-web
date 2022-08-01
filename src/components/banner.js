@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
 import me from "../assets/1.png";
 import me2 from "../assets/Coding.png";
 import "./banner.css";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   // animacja napisu
@@ -66,14 +67,32 @@ export const Banner = () => {
               <span className="wrap">{(` `, text)}</span>
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Skoro tu jesteś to chciałbym zaproponować Ci swoją dyspozycyjność
+              na stanowisko Front-End Developera. Posiadam wieloletnie
+              doświadczenie pracy z kodem. Do tej pory pracowałem jako
+              nauczyciel zajmujący się głównie aplikacjami webowymi. Chcę
+              zmienić branżę ale dalej rozwijać się w sfeze front-endu. Staram
+              się rozwiązywać problemy, a nie je tworzyć, skupiam się na
+              rozwiązaniach.
+            </p>
+            <p>
+              Nie lubię stać w miejscu stąd moja decyzja o zmianie zawodu. Moja
+              dotychczasowa praca z ludźmi, komunikatywność i bezkonfliktowość
+              będzie dużym wsparciem dla zespołu, do którego dołączę.
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={me2} className="meFoto"></img>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__bounce" : ""
+                  }
+                >
+                  <img src={me2} className="meFoto"></img>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

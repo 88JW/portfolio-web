@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { Container, Row, Col } from "react-bootstrap";
 import email from "../assets/MessageSent.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const ContactUs = () => {
   const form = useRef();
@@ -32,11 +34,23 @@ export const ContactUs = () => {
     <section className="contact-box" id="ContactUs">
       <Container>
         <Row>
-          <Col className="contact-img" md={6}>
-            <img src={email} alt="emailsend" />
+          <Col className="contactImg" md={6}>
+            <TrackVisibility once>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__backInLeft " : ""
+                  }
+                >
+                  {" "}
+                  <img src={email} alt="emailsend" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col className="contact-col" md={6}>
             <form ref={form} onSubmit={sendEmail}>
+              <h2>Skontaktuj się ze mną:</h2>
               <Row>
                 <Col md={6}>
                   <input type="text" name="user_fname" placeholder="Imię..." />
@@ -48,7 +62,7 @@ export const ContactUs = () => {
                     placeholder="Nazwisko..."
                   />
                 </Col>
-                <Col>
+                <Col md={6}>
                   <input
                     type="text"
                     name="user_company"
@@ -57,22 +71,28 @@ export const ContactUs = () => {
                 </Col>
                 <Col>
                   <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Temat wiadomości..."
+                  />
+                </Col>{" "}
+                <Col md={12}>
+                  <input
                     type="email"
                     name="user_email"
                     placeholder="Email..."
                   />
                 </Col>
-                <Col>
-                  <input
-                    type="text"
-                    name="from_name"
-                    placeholder="Temat wiadomości..."
-                  />
-                </Col>
                 <Col md={12}>
                   <textarea name="message" placeholder="Wiadomość..." />
                 </Col>
-                <input type="submit" value="Send" />
+                <Col md={12}>
+                  <input
+                    type="submit"
+                    value="Wyślij"
+                    className="submitbutton"
+                  />
+                </Col>
               </Row>
             </form>
           </Col>

@@ -1,6 +1,6 @@
 .project-img img {
   width: 400px;
-  height: 200px;
+  height: 300px;
 }
 
 .project-img {
@@ -14,7 +14,7 @@
 }
 .project-img::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.70);
   opacity: 0.85;
   position: absolute;
   width: 100%;

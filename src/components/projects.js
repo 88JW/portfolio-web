@@ -7,38 +7,39 @@ import trzy from "../assets/projects-img/3.png";
 import czetery from "../assets/projects-img/4.png";
 import piec from "../assets/projects-img/5.png";
 import szesc from "../assets/projects-img/6.png";
+import mojaStrona from "./../assets/projects-img/mojaStrona.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "WhenDżem",
-      technologies: "React",
+      title: "www.Einto.pf",
+      technologies: "Landing Page",
       imgURL: jeden,
     },
 
     {
-      title: "WhenDżem",
-      technologies: "React",
+      title: "Oregano.com",
+      technologies: "Layout Strony Ecommarce",
       imgURL: dwa,
     },
     {
       title: "WhenDżem",
-      technologies: "React",
+      technologies: "Aplikacja PWA",
       imgURL: trzy,
     },
     {
-      title: "WhenDżem",
-      technologies: "React",
+      title: "INCREDIBLE ",
+      technologies: "Pierwszy Landing Page",
       imgURL: czetery,
     },
     {
-      title: "WhenDżem",
-      technologies: "React",
+      title: "Portfolio",
+      technologies: "Strona z moim portfolio",
       imgURL: piec,
     },
     {
-      title: "WhenDżem",
-      technologies: "React",
+      title: "PogodaPWA",
+      technologies: "Pierwsza Aplikacja Pogodowa",
       imgURL: szesc,
     },
   ];
@@ -50,12 +51,13 @@ export const Projects = () => {
           <Col>
             <h2>Moje projekty:</h2>
             <p>
-              Magna velit sint in mollit non. Ea aliquip ut cillum ut. Fugiat
-              voluptate ipsum est labore dolore aliqua. Reprehenderit elit
-              eiusmod enim sunt aliquip excepteur. Labore deserunt pariatur
-              minim sit non duis. Eu sunt mollit sit veniam tempor nisi
-              incididunt magna duis sit ad.
+              Chciałbym zaprezentować projekty, w których wykorzystałem
+              dotychczas posiadaną wiedzę. Poruszam się w sferze front-endu w
+              następujących językach: HTML, CSS, JavaScript, React, Bootstrap,
+              jQuery, RWD i BEM. Cały czas się rozwujam i uczę się nowych
+              rzeczy.
             </p>
+
             <Tab.Container class="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
@@ -71,15 +73,30 @@ export const Projects = () => {
                     {projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
+                    <h4>
+                      Wszystkie projekty dostępne są na:
+                      https://app.netlify.com/teams/88jw/sites
+                    </h4>
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row>
-                    <p>
-                      Lorem labore excepteur esse eu officia ex. Deserunt nulla
-                      ut fugiat Lorem. Mollit incididunt sit anim consequat
-                      laborum duis ad.
-                    </p>
+                    <span>
+                      <img
+                        src={mojaStrona}
+                        alt="mojaStrona"
+                        className="mojaStrona-img"
+                      />
+                      <p>
+                        Stronę prowadziłem przez całą moją pracę w szkole.
+                        Strona była przeznaczona dla ucznów ZSE, umieszczane
+                        były tam materiały dydaktyczne, autorskie notatki, filmy
+                        instruktarzowe, sprawdziany i klasówki. Strona z uwagi
+                        na wygorę i szybkość dodawania kolejnych mateirałów
+                        postawiona na platformie Wordpres pod adresem:
+                        https://wojciechjaskula.wordpress.com/
+                      </p>
+                    </span>
                   </Row>
                 </Tab.Pane>
               </Tab.Content>
