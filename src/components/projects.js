@@ -8,6 +8,8 @@ import czetery from "../assets/projects-img/4.png";
 import piec from "../assets/projects-img/5.png";
 import szesc from "../assets/projects-img/6.png";
 import mojaStrona from "./../assets/projects-img/mojaStrona.png";
+import Netlify from "./../assets/4691413_netlify_icon.png";
+import wordpress from "./../assets/211925_social_wordpress_icon.png";
 
 export const Projects = () => {
   const projects = [
@@ -54,7 +56,7 @@ export const Projects = () => {
               Chciałbym zaprezentować projekty, w których wykorzystałem
               dotychczas posiadaną wiedzę. Poruszam się w sferze front-endu w
               następujących językach: HTML, CSS, JavaScript, React, Bootstrap,
-              jQuery, RWD i BEM. Cały czas się rozwujam i uczę się nowych
+              jQuery, RWD i BEM. Cały czas się rozwijam i uczę się nowych
               rzeczy.
             </p>
 
@@ -73,10 +75,10 @@ export const Projects = () => {
                     {projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
-                    <h4>
-                      Wszystkie projekty dostępne są na:
-                      https://app.netlify.com/teams/88jw/sites
-                    </h4>
+                    <h4>Wszystkie projekty dostępne są na:</h4>
+                    <a href="https://app.netlify.com/teams/88jw/sites">
+                      <img src={Netlify} alt="" className="" />
+                    </a>
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
@@ -89,13 +91,15 @@ export const Projects = () => {
                       />
                       <p>
                         Stronę prowadziłem przez całą moją pracę w szkole.
-                        Strona była przeznaczona dla ucznów ZSE, umieszczane
+                        Strona była przeznaczona dla uczniów ZSE, umieszczane
                         były tam materiały dydaktyczne, autorskie notatki, filmy
-                        instruktarzowe, sprawdziany i klasówki. Strona z uwagi
-                        na wygorę i szybkość dodawania kolejnych mateirałów
-                        postawiona na platformie Wordpres pod adresem:
-                        https://wojciechjaskula.wordpress.com/
+                        instruktażowe, sprawdziany i klasówki. Strona z uwagi na
+                        wygodę i szybkość dodawania kolejnych materiałów
+                        postawiona na platformie WordPress pod adresem:
                       </p>
+                      <a href="https://wojciechjaskula.wordpress.com/">
+                        <img src={wordpress} alt="" className="" />
+                      </a>
                     </span>
                   </Row>
                 </Tab.Pane>
