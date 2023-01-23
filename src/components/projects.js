@@ -58,6 +58,7 @@ export const Projects = () => {
               następujących językach: HTML, CSS, JavaScript, React, Bootstrap,
               jQuery, RWD i BEM. Cały czas się rozwijam i uczę się nowych
               rzeczy.
+              Praca na stanowisku Game Developera pozwoliła mi na rozwinięcie się w TypeScipcie oraz Pixji.js
             </p>
 
             <Tab.Container class="projects-tabs" defaultActiveKey="first">

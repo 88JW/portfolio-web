@@ -14,7 +14,8 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Junior Fornt-Developer",
+    "Game Developer",
+    "Fornt-Developer",
     "Web Developer",
     "Były Nauczyciel",
   ];
@@ -62,23 +63,30 @@ export const Banner = () => {
       <Container>
         <Row className="aligin-items">
           <Col xs={12} md={6} xl={7} className="banner-text">
-            <h1>{`Cześć! Jestem Wojciech, `} </h1>
+            <h1>{`Cześć! Jestem Wojtek, `} </h1>
             <h1>
               <span className="wrap">{(` `, text)}</span>
             </h1>
             <p>
               Skoro tu jesteś to chciałbym zaproponować Ci swoją dyspozycyjność
-              na stanowisko Front-End Developera. Posiadam wieloletnie
-              doświadczenie pracy z kodem. Do tej pory pracowałem jako
-              nauczyciel zajmujący się głównie aplikacjami webowymi. Chcę
-              zmienić branżę ale dalej rozwijać się w sfeze front-endu. Staram
-              się rozwiązywać problemy, a nie je tworzyć, skupiam się na
-              rozwiązaniach.
+              na stanowisko Developera. Posiadam wieloletnie doświadczenie pracy
+              z kodem. Do tej pory pracowałem jako nauczyciel zajmujący się
+              głównie aplikacjami webowymi.
+            </p>
+
+            <p>
+              W 2022 roku zmieniłem branżę szkoleniową na komercyjną i zostałem
+              Game Develeoperem w jednej z łódzkich firm. Do moich obowiązków
+              należało zarządzanie projektem powstawiania gry, osobami
+              przypisanymi do zespołu: grafikami, animatorami, testerami i
+              innymi programistami. Ale także za sam proces tworzenia gry jak
+              również za sam jej kod.
             </p>
             <p>
-              Nie lubię stać w miejscu stąd moja decyzja o zmianie zawodu. Moja
-              dotychczasowa praca z ludźmi, komunikatywność i bezkonfliktowość
-              będzie dużym wsparciem dla zespołu, do którego dołączę.
+              Jestem nastawiony na pracę w zespole, na ciągłe dokształcanie się
+              i na rozwiązywanie problemów. Moja dotychczasowa praca z ludźmi,
+              zarządzanie projektami i zespołem oraz wiedza programistyczna
+              będzie dużym atutem dla zespołu, do którego dołączę.
             </p>
           </Col>
           <Col xs={12} md={6} xl={5}>

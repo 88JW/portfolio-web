@@ -15,8 +15,7 @@ export const Footer = () => {
         <Row className="footer-box">
           <Col md={6} className="footer-text">
             <p>
-              Poszukuję miejsca w firmie, która będzie chciała dać szansę osobie
-              zmieniającej branżę.
+              Poszukuję miejsca w firmie, która potrzebuje developera nastawionego zarówno na kodowanie jak i zarządzanie projektami. 
             </p>
           </Col>
           <Col md={6} className="footer-socialmedia">

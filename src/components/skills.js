@@ -43,23 +43,35 @@ export const Skills = () => {
                   <img src={seventy} alt="" /> <h3>HTML and CSS</h3>
                 </div>
                 <div className="item-carousel">
+                  <img src={seventy} alt="" />
+                  <h3>React</h3>
+                </div>
+                <div className="item-carousel">
+                  <img src={seventy} alt="" />
+                  <h3>JavaScript</h3>
+                </div>
+                <div className="item-carousel">
+                  <img src={seventy} alt="" />
+                  <h3>TypeScript</h3>
+                </div>
+                <div className="item-carousel">
+                  <img src={sixty} alt="" />
+                  <h3>Pixi.js</h3>
+                </div>
+                <div className="item-carousel">
+                  <img src={sixty} alt="" />
+                  <h3>Scrum</h3>
+                </div>
+                <div className="item-carousel">
+                  <img src={seventy} alt="" /> <h3>Photoshop</h3>
+                </div>
+                <div className="item-carousel">
                   <img src={sixty} alt="" />
                   <h3>Bootstrap</h3>
                 </div>
                 <div className="item-carousel">
                   <img src={fifty} alt="" />
                   <h3>RWD and BEM</h3>
-                </div>
-                <div className="item-carousel">
-                  <img src={sixty} alt="" />
-                  <h3>React</h3>
-                </div>
-                <div className="item-carousel">
-                  <img src={forty} alt="" />
-                  <h3>JavaScript</h3>
-                </div>
-                <div className="item-carousel">
-                  <img src={seventy} alt="" /> <h3>Photoshop</h3>
                 </div>
               </Carousel>
             </div>
